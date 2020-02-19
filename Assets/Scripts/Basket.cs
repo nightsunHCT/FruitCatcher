@@ -14,4 +14,14 @@ public class Basket : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter (Collision coll)
+    {
+        // find what hit the basket
+        GameObject collideWith = coll.gameObject;
+        if (collideWith.tag == "Orange")
+        {
+            Destroy(collideWith);
+        }
+    }
+
 }
