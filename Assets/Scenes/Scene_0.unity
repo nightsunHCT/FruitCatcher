@@ -726,6 +726,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1278894643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544230446791813632, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929035461713784083, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67fa35b69bf69ce4fac4bfa81394daf7, type: 3}
 --- !u!1 &1362539768
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,3 +994,27 @@ MonoBehaviour:
   launchPos: {x: 0, y: 0, z: 0}
   basket: {fileID: 0}
   aimingMode: 0
+--- !u!1 &2056979138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6929035461713784083, guid: 67fa35b69bf69ce4fac4bfa81394daf7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278894643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2056979140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056979138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f7ada4bb36113408890f1e5607fc26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orangeprefab: {fileID: 6502608558788408595, guid: f200ce541ee860d489dcb71b71f1e84f,
+    type: 3}
+  speed: 10
+  leftAndRightEdge: 16
+  chanceToChangeDirections: 0.02
+  secondsBetweenOrangeDrops: 4
