@@ -3,7 +3,8 @@ Fruit Catcher:
 The general idea is quite similar to ApplePicker prototype, with a tree dropping a certain type of fruit while moving left and right.
 But instead of doing a basket that is controlled (left-right) by mouse movement, we are planning to create a basket launcher in which the basket will be thrown into the air to catch the fruit mid-air. Once the basket lands back on ground, the basket will be destroyed after 1 second. 
 
+# original plan, but ended up with High Score system instead
 The player goal is to catch 10 fruits per level, there will be certain number of level in which each level either the Tree is moving faster or has a higher drop rate.
 
 Scoring: 
-If the player unable to catch the Orange once it reach the ground, the score of orange caught reduced by 2 (or turn back to 0 if the caught orange was 2 or below.  
+Each orange worth 100 points and player allowed to missed 3 oranges before the game will restart. 
