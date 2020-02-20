@@ -10,7 +10,7 @@ public class Orange : MonoBehaviour
     {
         if (transform.position.y < bottomY)
         {
-            Destroy(this.gameObject, 1f);
+            Destroy(this.gameObject, .3f);
         }
     }
 
