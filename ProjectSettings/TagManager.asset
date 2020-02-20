@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Orange
+  - Basket
   layers:
   - Default
   - TransparentFX

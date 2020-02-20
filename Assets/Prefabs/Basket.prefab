@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 86869512882591881}
   m_Layer: 10
   m_Name: Basket
-  m_TagString: Untagged
+  m_TagString: Basket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843fce3f08f8b8f46910ba6585771a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreGt: {fileID: 0}
 --- !u!1 &5925439127469259797
 GameObject:
   m_ObjectHideFlags: 0
