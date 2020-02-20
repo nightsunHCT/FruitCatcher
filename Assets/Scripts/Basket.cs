@@ -12,7 +12,7 @@ public class Basket : MonoBehaviour
     {
         if (transform.position.y < bottomY)
         {
-            Destroy(this.gameObject, 1f);
+            Destroy(this.gameObject, .5f);
         }
     }
 
