@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Basket : MonoBehaviour
 {
     public static float bottomY = -8f;
+    public Text scoreGT;
 
     void Update()
     {
@@ -14,14 +15,14 @@ public class Basket : MonoBehaviour
             Destroy(this.gameObject, 1f);
         }
     }
-    public Text scoreGt;
 
-    void Start()
-    {
-        GameObject scoreGo = GameObject.Find("Score");
-        scoreGt = scoreGo.GetComponent<Text>();
-        scoreGt.text = "0";
-    }
+   // void Start()
+   // {
+   //     GameObject scoreGo = GameObject.Find("Score");
+   //     scoreGT = scoreGo.GetComponent<Text>();
+   //     scoreGT.text = "0";
+   // }
+
     void OnCollisionEnter (Collision coll)
     {
         // find what hit the basket
@@ -30,15 +31,24 @@ public class Basket : MonoBehaviour
         {
             Destroy(collideWith);
 
-        }
-        int score = int.Parse(scoreGt.text);
-        score += 1;
-        scoreGt.text = score.ToString();
+            GameObject scoreGo = GameObject.Find("Score");
+            scoreGT = scoreGo.GetComponent<Text>();
+           // scoreGT.text = "0";
 
-        if (score > HighScore.score)
-        {
-            HighScore.score = score;
+            int score = int.Parse(scoreGT.text);
+            score += 1;
+            scoreGT.text = score.ToString();
+
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
+
+
         }
+       
+
+        
 
     }
     
